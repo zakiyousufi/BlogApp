@@ -29,6 +29,11 @@ rails server
 ```
 - Navigate to http://localhost:3000/
 
+#### To run the tests
+```
+rspec
+```
+
 ## Author
 
 👤 **Ahmad Zaki Yousufi]**
