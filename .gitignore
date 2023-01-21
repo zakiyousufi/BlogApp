@@ -29,4 +29,9 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
-/node_modules
+
+# Ignore IDE folders
+.idea
+
+# Ignore modules folder
+node_modules/

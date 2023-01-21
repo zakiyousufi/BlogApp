@@ -1,7 +1,12 @@
 require 'rails_helper'
 
 RSpec.describe Post, type: :model do
-  subject { Post.new(title: 'My First Post', comments_counter: 4, likes_counter: 20) }
+  user = User.create(name: 'john', photo: 'link to photo', bio: 'dev', posts_count: 0)
+
+  subject do
+    Post.new(author: user, title: 'web dev best practices', text: 'this is where the post text goes',
+             comments_count: 0, likes_count: 0)
+  end
 
   before { subject.save }
 
@@ -10,38 +15,29 @@ RSpec.describe Post, type: :model do
     expect(subject).to_not be_valid
   end
 
-  it 'comments_counter should be present' do
-    subject.title = nil
+  it 'comments count should be integer' do
+    subject.comments_count = 'hello'
     expect(subject).to_not be_valid
   end
 
-  it 'likes_counter should be present' do
-    subject.title = nil
+  it 'comments count should be >= 0' do
+    subject.comments_count = -1
     expect(subject).to_not be_valid
   end
 
-  it 'title should not be to long' do
-    subject.title = 'a' * 256
+  it 'likes count should be integer' do
+    subject.likes_count = 'hello'
     expect(subject).to_not be_valid
   end
 
-  it 'comments_counter should be integer' do
-    subject.comments_counter = 'b'
+  it 'likes count should be >= 0' do
+    subject.likes_count = -1
     expect(subject).to_not be_valid
   end
 
-  it 'comments_counter should be greater than or equal to zero' do
-    subject.comments_counter = -1
-    expect(subject).to_not be_valid
-  end
-
-  it 'likes_counter should be integer' do
-    subject.likes_counter = 'c'
-    expect(subject).to_not be_valid
-  end
-
-  it 'likes_counter should be greater than or equal to zero' do
-    subject.likes_counter = -2
-    expect(subject).to_not be_valid
+  it 'returns recent comments' do
+    Comment.create(post: subject, author: user, text: 'test')
+    comments = subject.recent_comments
+    expect(comments.length).to eq 1
   end
 end
