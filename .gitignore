@@ -6,8 +6,7 @@
 
 # Ignore bundler config.
 /.bundle
-# Ignore bundler config.
-/node_modules
+
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
@@ -30,3 +29,9 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Ignore IDE folders
+.idea
+
+# Ignore modules folder
+node_modules/
