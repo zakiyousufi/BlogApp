@@ -19,9 +19,8 @@
 
 # 📖 [Blog App] <a name="about-project"></a>
 
-> The Blog app is Roby on rails website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
-
 **[Blog App]** is a...
+> The Blog app is Roby on rails website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
 ## 🛠 Built With <a name="built-with"></a>
 - Languages: Ruby
