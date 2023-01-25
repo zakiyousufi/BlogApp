@@ -19,8 +19,7 @@
 
 # 📖 [Blog App] <a name="about-project"></a>
 
-**[Blog App]** is a...
-> The Blog app is Roby on rails website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
+> This is a blog website where you can create an account and write posts. You can also comment on other people's posts and like them
 
 ## 🛠 Built With <a name="built-with"></a>
 - Languages: Ruby
@@ -49,13 +48,10 @@
 
 <!-- Features -->
 
-### Key Features <a name="key-features"></a>
-
-> Describe between 1-3 key features of the application.
-
-- **[SignUp]**
-- **[Create_Post]**
-- **[Like_and_comment]**
+### Key Features <a name="key-features">
+_ User Authentication
+- Create Posts
+- Delete Posts
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -139,6 +135,10 @@ Feel free to check the [issues page](../../issues/).
 Give a ⭐️ if you like this project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🙏 Acknowledgments
+
+> Give credit to everyone who inspired your codebase
 
 <!-- LICENSE -->
 
