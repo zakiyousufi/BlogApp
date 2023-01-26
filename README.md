@@ -19,8 +19,7 @@
 
 # 📖 [Blog App] <a name="about-project"></a>
 
-**[Blog App]** is a...
-> The Blog app is Roby on rails website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
+> This is a blog website where you can create an account and write posts. You can also comment on other people's posts and like them
 
 ## 🛠 Built With <a name="built-with"></a>
 - Languages: Ruby
@@ -49,13 +48,10 @@
 
 <!-- Features -->
 
-### Key Features <a name="key-features"></a>
-
-> Describe between 1-3 key features of the application.
-
-- **[SignUp]**
-- **[Create_Post]**
-- **[Like_and_comment]**
+### Key Features <a name="key-features">
+_ User Authentication
+- Create Posts
+- Delete Posts
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,6 +109,13 @@ rspec
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🔭 Future Features
+
+ - user authentication
+ - CRUD operations
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
@@ -133,10 +136,15 @@ Give a ⭐️ if you like this project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🙏 Acknowledgments
+
+- A special thanks to Microverse for inspiring this project. We are indebted to you all at Microverse
+- A special thanks goes to all our peers at Microverse for being there for us.
+
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
-This project dosen't have license
+This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
