@@ -13,7 +13,6 @@
  *= require_tree .
  *= require_self
  */
-
  .login_header {
     margin: 10px;
   }
