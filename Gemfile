@@ -11,7 +11,6 @@ gem 'sprockets-rails'
 
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.1'
-gem 'sqlite3', '~> 1.4.0'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
@@ -44,6 +43,12 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 gem 'tzinfo-data'
 
 gem 'ffi'
+
+gem 'letter_opener'
+
+gem 'devise'
+
+gem 'cancancan'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
