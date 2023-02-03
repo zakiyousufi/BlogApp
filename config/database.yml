@@ -24,8 +24,8 @@ default: &default
 development:
   <<: *default
   database: ROR_Blog_development
-  username: ramin
-  password: <%= ENV['hellorails2_DATABASE_PASSWORD'] %>
+  # username: ramin
+  # password: <%= ENV['hellorails2_DATABASE_PASSWORD'] %>
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -60,8 +60,8 @@ development:
 test:
   <<: *default
   database: ROR_Blog_test
-  username: ramin
-  password: <%= ENV['hellorails2_DATABASE_PASSWORD'] %>
+  # username: postgre
+  # password: <%= ENV['hellorails2_DATABASE_PASSWORD'] %>
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -87,4 +87,4 @@ production:
   <<: *default
   database: ROR_Blog_production
   username: rails_blog_app
-  password: <%= ENV['RAILS_BLOG_APP_DATABASE_PASSWORD'] %>
+  password: <%= ENV["BLOG_APP_DATABASE_PASSWORD"] %>
